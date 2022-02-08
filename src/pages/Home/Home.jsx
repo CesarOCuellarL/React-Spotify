@@ -13,7 +13,7 @@ import { getSpotifyToken, spotifySearch } from "../../api/spotify";
 import { Card } from "../../components/Card";
 const cookies = new Cookies();
 
-function Home(){
+function Home() {
     const [data, setData] = useState([]);
     const [searchQuery, setSearchQuery] = useState({
         type: "all",
