@@ -40,7 +40,7 @@ function Home() {
                 type="search" 
                 onChange={(e) => 
                     setSearchQuery((current) => ({ ...current, query: e.target.value }))
-            }
+                }
             />
             <FormControl>
                 <InputLabel id="demo-simple-select-label">Type</InputLabel>
