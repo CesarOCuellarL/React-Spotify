@@ -74,7 +74,7 @@ function Home(){
             padding={10}
             >
                 {data?.tracks &&
-                    data?.tracks?-items?.map((track, index) => (
+                    data?.tracks?.items?.map((track, index) => (
                         <Grid item xs={2} sm={4} md={4} key={index}>
                             <Card
                                 name={track.name}
