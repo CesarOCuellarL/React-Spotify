@@ -82,7 +82,7 @@ function Home(){
                                 image={track.album?.images[0]?.url}
                             />
                         </Grid>
-                    ))};  
+                    ))}  
             </Grid>
             <Grid item xs={6}></Grid>
         </Grid>
