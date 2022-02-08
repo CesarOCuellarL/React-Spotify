@@ -77,7 +77,7 @@ function Home() {
                         <Grid item xs={2} sm={4} md={4} key={index}>
                             <Card
                                 name={track.name}
-                                artist={track.artist[0].name}
+                                artist={track.artists[0].name}
                                 image={track.album?.images[0]?.url}
                             />
                         </Grid>
