@@ -7,9 +7,9 @@ import {
     Select,
     TextField,
 } from "@mui/material";
-import React, { userEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Cookies from "universal-cookie";
-import { getSpotifyToken } from "../../api/spotify";
+import { getSpotifyToken, spotifySearch } from "../../api/spotify";
 import { Card } from "../../components/Card";
 const cookies = new Cookies();
 
@@ -23,7 +23,7 @@ function Home(){
     const token = cookies.get("token");
 
     const search = async () => {
-        const data = await spotifySearch(searchQuery.type, SearchQuery.query);
+        const data = await spotifySearch(searchQuery.type, searchQuery.query);
         setData(data);
     };
 
@@ -43,7 +43,7 @@ function Home(){
             }
             />
             <FormControl>
-                <inputLabel id="demo-simple-select-label">Type</inputLabel>
+                <InputLabel id="demo-simple-select-label">Type</InputLabel>
                 <Select 
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
