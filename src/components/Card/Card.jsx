@@ -10,10 +10,11 @@ import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 
-export default function MediaControlCard({name, artist, image}) {
+export default function MediaControlCard({name, artist, image, url}) {
   const theme = useTheme();
 
   return (
+    <a style={{ textDecoration: 'none',color:'black' }} href={url}>
     <Card sx={{ 
         display: "flex",
         justifyContent: "space-between",
@@ -66,5 +67,6 @@ export default function MediaControlCard({name, artist, image}) {
         alt="Live from space album cover"
       />
     </Card>
+    </a>
   );
 }

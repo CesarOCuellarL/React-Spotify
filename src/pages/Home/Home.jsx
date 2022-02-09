@@ -81,6 +81,7 @@ function Home() {
                                 name={track.name}
                                 artist={track.artists[0].name}
                                 image={track.album?.images[0]?.url}
+                                url={track.external_urls?.spotify}
                             />
                         </Grid>
                     ))}
