@@ -27,7 +27,7 @@ export default function MediaControlCard({name, artist, image}) {
           }}
       >
         <CardContent sx={{ flex: '1 0 auto' }}>
-          <Typography component="div" variant="h5">
+          <Typography component="div" variant="body1">
             {name}
           </Typography>
           <Typography 
