@@ -30,13 +30,16 @@ function Home() {
     };
 
     useEffect(() => {
-        if (token) getSpotifyToken();
+        if (!token) getSpotifyToken();
     }, [token]);
 
     return (
-        <Grid container marginTop={10}>
-            <Grid item xs={6}>
-                <TextField
+        <Grid style={{backgroundcolor: 'black'}} container marginTop={10}>                 
+            <Grid item xs={4}>
+                <a className="alignCentral" href='https://github.com/Ceslusbel/React-Spotify'>GitHub</a>  
+            </Grid>
+            <Grid item xs={8}>
+            <TextField
                     id="outlined-search"
                     label="Search Field"
                     type="search"
@@ -62,8 +65,6 @@ function Home() {
                         ))}
                     </Select>
                 </FormControl>
-            </Grid>
-            <Grid item xs={6}>
                 <Button variant="contained" onClick={search}>
                     Search
                 </Button>
