@@ -34,7 +34,7 @@ function Home() {
     }, [token]);
 
     return (
-        <Grid style={{backgroundcolor: 'black'}} container marginTop={10}>                 
+        <Grid container marginTop={10}>                 
             <Grid item xs={4}>
                 <a className="alignCentral" href='https://github.com/Ceslusbel/React-Spotify'>GitHub</a>  
             </Grid>
